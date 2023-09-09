@@ -1,0 +1,29 @@
+{
+  "name" : "arvan/darouqe",
+  "description" : "Send user's usage of application to the calculator.",
+  "type" : "library",
+  "license" : "Arvan",
+  "authors" : [],
+  "minimum-stability" : "stable",
+  "autoload" : {
+    "psr-4" : {
+      "AR\\Darouqe\\" : "src/"
+    }
+  },
+  "require" : {
+    "php" : ">=7.1",
+    "guzzlehttp/guzzle" : "^6.0|^7.0|^7.1|^7.5",
+    "illuminate/support" : "^5.6|^6.0|^7.0|^8.0|^9.5|^10.3",
+    "illuminate/console" : "^5.6|^6.0|^7.0|^8.0|^9.5|^10.3"
+  },
+  "extra" : {
+    "laravel" : {
+      "providers" : [
+        "AR\\Darouqe\\Laravel\\Providers\\DarouqeServiceProvider"
+      ],
+      "aliases" : {
+        "Darouqe" : "AR\\Darouqe\\Laravel\\Facades\\Darouqe"
+      }
+    }
+  }
+}
